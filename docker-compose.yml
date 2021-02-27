@@ -1,0 +1,89 @@
+version: '3.7'
+services:
+  # PHP-FPM - Service\\\
+  app:
+    build:
+      context: .
+      dockerfile: ./.docker/php/Dockerfile
+    ports:
+      - "2249:22"
+    container_name: app
+    restart: unless-stopped
+    tty: true
+    working_dir: /var/www
+    volumes:
+      - ./www:/var/www
+      - ./.docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+
+    networks:
+      - app-network
+
+  # NGINX - Service
+  server:
+    image: nginx:1.19.4-alpine
+    container_name: server
+    depends_on:
+      - app
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "8080:80"
+      - "8143:443"
+    volumes:
+      - ./www:/var/www
+      - ./.docker/nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - app-network
+
+  # MySQL - Service
+  db:
+    image: mysql:8.0.22
+    command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci','--default-authentication-plugin=mysql_native_password']
+    container_name: db
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: laraveldb
+      MYSQL_USER: laravel
+      MYSQL_PASSWORD: laravelpassworddb
+      MYSQL_ROOT_PASSWORD: rootpasswordmysql
+    volumes:
+      - ./databases:/var/lib/mysql/
+    networks:
+      - app-network
+
+  # REDIS - Service
+  redis:
+    image: redis:6.0.9-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.8
+    restart: always
+    links:
+      - db:db
+    ports:
+      - 8081:80
+    depends_on: 
+      - db
+    networks: 
+      - app-network
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: rootpasswordmysql
+
+# Volumes
+volumes:
+  mysqldata:
+    driver: local
+
+# Networks
+networks:
+  app-network:
+    driver: bridge
