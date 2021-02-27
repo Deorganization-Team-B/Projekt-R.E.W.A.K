@@ -7,7 +7,7 @@
 #### Jeżeli wszystko zainstalowałeś, przejdź do instrukcji poniżej:
 1. Sklonuj repozytorium (Clone a repository):
 ```bash
-$ git clone https://strafe:mygithubpassword@github.com/witelon-squad/store
+$ git clone https://github.com/Deorganization-Team-B/Projekt-R.E.W.A.K
 ```
 2. Następnie przechodzisz do folderu sklonowanego repozytorium: 
 ```bash
