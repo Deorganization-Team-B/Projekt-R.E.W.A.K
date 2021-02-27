@@ -16,3 +16,4 @@ databases
 .dockerignore
 .gitattributes
 docker-compose.yml
+.idea
