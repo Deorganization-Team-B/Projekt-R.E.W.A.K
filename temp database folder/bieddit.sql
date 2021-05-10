@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Czas generowania: 07 Maj 2021, 18:42
+-- Czas generowania: 10 Maj 2021, 15:50
 -- Wersja serwera: 8.0.22
 -- Wersja PHP: 7.2.14
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Baza danych: `bieddit`
+-- Baza danych: `biedditv2`
 --
 
 -- --------------------------------------------------------
@@ -44,7 +44,6 @@ CREATE TABLE `comment_1` (
 
 INSERT INTO `comment_1` (`id`, `post_id`, `comment`, `comment_id`, `user_id`, `karma`, `comment_date`) VALUES
 (1, 1, 'Yeah I also like that game', NULL, 1, 0, '2021-05-06 05:09:10'),
-(2, 1, 'This game stinks.', NULL, 2, 0, '2021-05-06 10:00:00'),
 (3, 1, 'I agree with you that you agree', 1, 2, 0, '2021-05-06 12:00:00');
 
 -- --------------------------------------------------------
@@ -151,7 +150,8 @@ CREATE TABLE `password_resets` (
 
 INSERT INTO `password_resets` (`email`, `token`, `created_at`) VALUES
 ('test@testernik.tester', '$2y$10$tilBt/dYI9gs/xSlcu7US.ELyYOvZm8r545RSpw25SVpNOJkFRaLS', '2021-05-05 12:30:12'),
-('dad@dad.dad', '$2y$10$ItzH3.5QiGo48PjrPm7OTuyrDx3eMc.hE8w6Ul44yqMVdhA9zJzau', '2021-05-06 19:35:53');
+('dad@dad.dad', '$2y$10$ItzH3.5QiGo48PjrPm7OTuyrDx3eMc.hE8w6Ul44yqMVdhA9zJzau', '2021-05-06 19:35:53'),
+('jakub5pl@gmail.com', '$2y$10$HMXLbtGbJxtvsRHJ6sva8.I51x8wKRvcLiqxdThOKAqdBXcY4RzPK', '2021-05-10 14:09:42');
 
 -- --------------------------------------------------------
 
@@ -282,7 +282,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `date_of_birth`, `karma`, `warns`, `rights`) VALUES
 (1, 'TestnikTestowy', 'test@testernik.tester', NULL, '$2y$10$PFtYiOxvVUGT99SDcp0Yw.0AxQnCD3ScWrQs4HVOMyaIV7K.YDgKq', 'RYSkRoizi0jBlMemsGGCY6a27iOxFxydvNSjubOsgEaqzh8x1Z3bql5wjaTm', '2021-04-30 19:42:36', '2021-04-30 19:42:36', '1998-05-04', 0, 0, 1),
-(2, 'dad', 'dad@dad.dad', NULL, '$2y$10$UNChjlpS3lUl1R7nnqATDODTWhL7TBV7LgcKitsf1kT2gXMtSQvK2', 'kna4CW305qqxKWbYMLboYQxjU5HFv2zBICY1TZdtThyVL0c2lbS1BD6v32DK', '2021-05-04 21:43:49', '2021-05-04 21:43:49', '1992-03-02', 69, 0, 3);
+(2, 'dad', 'dad@dad.dad', NULL, '$2y$10$UNChjlpS3lUl1R7nnqATDODTWhL7TBV7LgcKitsf1kT2gXMtSQvK2', 'JyXf4JA5lqHcvvcpMznlOcOfVeSYTCR3PuIk8oV05cz2ALR9QtoZBGCZxZTv', '2021-05-04 21:43:49', '2021-05-04 21:43:49', '1992-03-02', 69, 0, 3),
+(5, 'Aceaelus', 'jakub5pl@gmail.com', NULL, '$2y$10$SBtDlhHcHIrDrYnW.2M3beX5Ym5kjeOeuSc6yXIyi1GxFSzqvGIye', 'lqKgyf4StFbvJgBVrFy3pi96hpTinbw0mfKRIp5JOOjWVfTR7suHHJ24ZOwC', '2021-05-07 19:12:35', '2021-05-07 19:12:35', '1936-05-12', 0, 0, 1),
+(6, 'TrueMaster', 'truemaster1209402@gmail.com', NULL, '$2y$10$XHAMAK7kyufYxiPvyNytV.VM8OQcMAMpw48X9QbiDbUTkGCEA83My', NULL, '2021-05-10 13:39:56', '2021-05-10 13:39:56', '1990-05-13', 0, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -465,7 +467,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT dla tabeli `post_1`
 --
 ALTER TABLE `post_1`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT dla tabeli `post_2`
@@ -489,7 +491,7 @@ ALTER TABLE `post_4`
 -- AUTO_INCREMENT dla tabeli `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT dla tabeli `walls`
