@@ -1,10 +1,10 @@
 <p align="center"><a href="https://github.com/Deorganization-Team-B/Projekt-R.E.W.A.K" target="_blank">
-<h1>Projekt R.E.W.A.K</h1>
+<h1>Projekt B.I.E.D.D.I.T</h1>
 
 
-## About Projekt R.E.W.A.K
+## About Projekt B.I.E.D.D.I.T
 
-Projekt R.E.W.A.K jest to nasza próba stworzenia strony bazowanej redditem wykopem, uroczo nazwanej bieddit. Używamy do tego PHP z frameworkiem Laravela.
+Projekt B.I.E.D.D.I.T jest to nasza próba stworzenia strony bazowanej redditem wykopem, uroczo nazwanej bieddit. Używamy do tego PHP z frameworkiem Laravela.
 
 ## Creators
 
