@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/Deorganization-Team-B/Projekt-R.E.W.A.K" target="_blank"><img src="https://github.com/Deorganization-Team-B/Projekt-R.E.W.A.K/blob/main/www/public/img/GigaChad.png" width="250" height="250"></a></p>
+<p align="center"><a href="https://github.com/Deorganization-Team-B/Projekt-R.E.W.A.K" target="_blank">
 <h1>Projekt R.E.W.A.K</h1>
 
 
