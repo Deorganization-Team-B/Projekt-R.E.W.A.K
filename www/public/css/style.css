@@ -1,0 +1,130 @@
+
+
+/**{
+    margin: 0px;
+    padding: 0px;
+}
+#nav-bar {
+    float: left;
+    width:100%;
+    background-color: #4c4c4c;
+    height: auto;
+
+}
+#logo{
+    float: left;
+    width:15%;
+    color: antiquewhite;
+    text-align: center
+}
+#logo img {
+    float: left;
+    height: 70px;
+}
+#logo h1{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+}
+#wall-list{
+    width:15%;
+    float: left;
+}
+
+/* ------------------------CZĘŚĆ-GÓRNA-MENU------------------------ */
+
+/* wygląd głównego elementu *//*
+#wall-list li {
+    list-style-type:none;
+    font-size:18px;
+    line-height:40px;
+    float:left;
+    width:100%;
+    margin-left:1px;
+    background-color:#718096;
+    height:40px;
+}
+
+/* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol *//*
+#wall-list li a {
+    color:#000;
+    padding:0 5px;
+}
+
+
+/* wygląd elementu - li - pierwszego dziecka elementu - ol *//*
+#wall-list li:first-child {
+    margin-left:0;
+}
+
+/* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li *//*
+#wall-list li:hover {
+    background-color:#EEE;
+}
+
+/* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li *//*
+#wall-list li:hover > a {
+    color:#09C;
+}
+
+/* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li *//*
+#wall-list li:hover > ul {
+    display:block;
+}
+
+/* ------------------------CZĘŚĆ-ROZWIJANA-MENU------------------------ */
+
+/* wygląd głównych rozwijanych elementów - ul *//*
+#wall-list li > ul {
+    display:none;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+/* wygląd elementu - li - w części rozwijanej *//*
+#wall-list li > ul > li {/*
+    position:relative;
+    background-color:#EEE;
+}
+
+/* wygląd elementu - a - w części rozwijanej *//*
+#wall-list li > ul > li > a {
+    border-top:1px solid #FFF;
+}
+
+/* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li *//*
+#wall-list li > ul > li:hover {
+    background-color:#DDD;
+}
+
+/* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li *//*
+#wall-list li > ul > li:hover > a {
+    color:#09C;
+}
+
+
+
+
+#search-bar {
+
+}
+#shortcuts {
+}
+#shortcuts img {
+    height: 72px;
+}
+#user-bar img {
+    height: 52px;
+}
+#user-bar {
+
+}
+#username {
+
+}
+#karma-points {
+
+}
