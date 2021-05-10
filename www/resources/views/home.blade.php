@@ -16,7 +16,7 @@
 @section('addpost')
     @if (isset($walls))
         <a class="navbar-brand" href="/home/{{$walls[0]->id_wall}}/createpost">
-            <img src="{{asset('img/AceGenocide.png')}}" height="55" alt="">
+            <img src="{{asset('img/post_add.png')}}" height="55" alt="">
         </a>
     @endif
 @endsection
@@ -45,7 +45,7 @@
                 <div class="row justify-content-center p-2">
                     <div class="col-md-8">
                         <div class="card border border-white">
-                            <div class="card-header bg-dark text-white border-bottom border-light"><span class="">{{$post->title}}</span><span class="float-right"> {{$post->name}}<img src="{{asset('img/RandomDog.png')}}" style="max-height: 50px;" alt="User Profile Picture Placeholder in form of mgr inż. Krzysztof Rewak while in Pepe Form"></span></div>
+                            <div class="card-header bg-dark text-white border-bottom border-light"><span class="">{{$post->title}}</span><span class="float-right"> {{$post->name}}<img src="{{asset('img/GigaChad.png')}}" style="max-height: 50px;" alt="User Profile Picture Placeholder"></span></div>
                             <div class="card-body bg-dark text-white "><img class="img-fluid rounded mx-auto d-block" src="https://imgur.com/{{ $post->imgur }}"></div>
                             <div class="card-body bg-dark text-white">{!! $post->post !!}</div>
                             <div class="card-body bg-dark text-white border-top border-light">

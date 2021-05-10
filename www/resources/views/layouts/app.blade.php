@@ -19,7 +19,7 @@
 
 <nav class="navbar navbar-expand-dark navbar-dark bg-dark sticky-top">
     <div class="d-flex justify-content-start">
-        <img class="navbar-brand" style="height:70px;" src="{{asset('img/logo-normal.png')}}" alt="mgr inż. Krzysztof Rewak patrzący się na ciebie z wyrazem zażenowania">
+        <img class="navbar-brand" style="height:70px;" src="{{asset('img/logo_guest.png')}}" alt="Guest version of the logo">
         <a class="navbar-text navbar-brand align-middle" href="/">Bieddit</a>
     </div>
     <div class="d-flex justify-content-end">

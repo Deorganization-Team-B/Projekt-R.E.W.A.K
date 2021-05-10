@@ -20,7 +20,7 @@
 <body class="bg-secondary">
 <!-- start of a navbar for logged in administrator -->
 <nav class="navbar navbar-expand-dark navbar-dark bg-dark sticky-top">
-    <img class="navbar-brand" style="height:70px;" src="{{asset('img/GigaChad.png')}}" alt="mgr inż. Krzysztof Rewak patrzący się na ciebie z wyrazem zażenowania">
+    <img class="navbar-brand" style="height:70px;" src="{{asset('img/logo_admin.png')}}" alt="Logo for registered users that are also administrators">
     <a class="navbar-text navbar-brand" href="/admin">Bieddit</a>
 
 
@@ -51,7 +51,7 @@
 
     </div>
     <a class="navbar-brand">
-        <img src="{{asset('img/Error.png')}}" height="70" alt="User Profile Picture Placeholder in form of mgr inż. Krzysztof Rewak while in Pepe Form">
+        <img src="{{asset('img/GigaChad.png')}}" height="70" alt="Placeholder User profile picture">
     </a>
 </nav>
 <!-- end of a navbar for logged in administrator -->

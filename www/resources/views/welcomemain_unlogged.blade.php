@@ -23,7 +23,7 @@
 <!-- start of a navbar for unlogged user/guest-->
 <nav class="navbar navbar-expand-dark navbar-dark bg-dark sticky-top">
     <span class="float-start">
-    <img class="navbar-brand" style="height:70px;" src="{{asset('img/Error.png')}}" alt="dr inż. Zbigniew Fryźlewicz patrzy się na ciebie z pogardą i nazywa cię 'Pathetic'">
+    <img class="navbar-brand" style="height:70px;" src="{{asset('img/logo_guest.png')}}" alt="logo for guests">
     <a class="navbar-text navbar-brand" href="/">Bieddit</a>
 </span>
 

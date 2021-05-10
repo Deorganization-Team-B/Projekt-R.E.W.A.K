@@ -20,7 +20,7 @@
 <body class="bg-secondary">
 <!-- start of a navbar for logged in user -->
 <nav class="navbar navbar-expand-dark navbar-dark bg-dark sticky-top">
-    <img class="navbar-brand" style="height:70px;" src="{{asset('img/ChadYes.png')}}" alt="mgr inż. Krzysztof Rewak patrzący się na ciebie z wyrazem zażenowania">
+    <img class="navbar-brand" style="height:70px;" src="{{asset('img/logo_user.png')}}" alt="Authenticated version of the logo">
     <a class="navbar-text navbar-brand" href="/">Bieddit</a>
 
 
@@ -42,7 +42,7 @@
 
     @yield('addpost')
     <a class="navbar-brand" href="/home/cryptoprice">
-        <img src="{{asset('img/LetsGo.png')}}" height="55" alt="">
+        <img src="{{asset('img/crypto.png')}}" height="55" alt="">
     </a>
 
         <div class="dropdown" >
@@ -57,7 +57,7 @@
 
         </div>
     <a class="navbar-brand">
-        <img src="{{asset('img/Error.png')}}" height="70" alt="User Profile Picture Placeholder in form of mgr inż. Krzysztof Rewak while in Pepe Form">
+        <img src="{{asset('img/GigaChad.png')}}" height="70" alt="User Profile Picture Placeholder">
     </a>
 </nav>
 <!-- end of a navbar for logged in user -->
